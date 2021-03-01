@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NASA Satellite</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style type="text/css">
+        #main_div{
+            position: absolute;
+            background-color: aliceblue;
+            width: 100%;
+            padding: 40px;
+        }
+        input{
+            min-width: 220px;
+            font-family: monospace;
+        }
+        #inp_page{
+            margin-left: 100px;
+        }
+        #btn_get_images{
+            position: absolute;
+            left: 700px;
+            padding: 7px;
+            top: 29px;
+            font-family: monospace;
+            cursor : pointer;
+        }
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        #image_div img {
+            max-height: 400px;
+            max-width: 100%;
+            min-height: 200px;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main_div">
+        <input type="text" id="inp_sol" placeholder="Enter Sol max(1000)" maxlength="1000">
+        <input type="text" id="inp_page" placeholder="Enter Page Number to display">
+        <button id="btn_get_images" type="submit">Get Images</button>
+    </div>
+    <div id="image_div" class="flex-center">
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
